@@ -9,3 +9,6 @@ node_modules
 
 # Temporary Files
 *.tmp *~
+
+# Sass Cache Files
+.sass-cache
