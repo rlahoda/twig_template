@@ -1,0 +1,63 @@
+.c_nav {
+  list-style-type: none;
+}
+
+ul.nav {
+  text-align: center;
+  line-height: 1;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include respond-at($bp-small) {
+    margin-top: 10vh;
+
+    @include respond-ht($bph-med) {
+      line-height: 2;
+      margin-top: 25vh;
+      font-size: 1.125em;
+    }
+  }
+
+  @include respond-at($bp-small) {
+    @include respond-ht($bph-med) {
+      line-height: 2;
+      font-size: 1.125em;
+    }
+  }
+}
+
+.menu-item {
+  font-size: 1em;
+  line-height: 2;
+  padding-bottom: 15px;
+  width: 100%;
+  border-width: 0 0 1px;
+  border-color: $gray_40;
+
+  @include respond-at($bp-small) {
+    border-style: none;
+
+    @include respond-ht($bph-med) {
+      line-height: 2;
+      font-size: 1.125em;
+    }
+  }
+}
+
+.nav_menu_button {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1em;
+
+  @include respond-at($bp-small) {
+    display: none;
+  }
+
+  &::before {
+    @include sprite(downarrow);
+    content: "";
+    margin: 0 5px;
+  }
+}
